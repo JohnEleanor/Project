@@ -1,9 +1,8 @@
 # Project
 ### `How To Start `
-`$ cd react-login`\
-`$ npm start`
+`$ insatall Databse`\
+`$ Drag file to htdocs`
 
 
-![image](https://media.discordapp.net/attachments/807192736805158932/984266795072507904/unknown.png?width=1248&height=671)
-
+![image](https://media.discordapp.net/attachments/984088931165413387/984514131245797456/unknown.png?width=1247&height=671)
 
