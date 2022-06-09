@@ -30,7 +30,10 @@ if (isset($_POST['submit'])) {
         // ถ้าไม่พบ username จะทำการตรวจสอบ password โดยเทียบ password ที่กรอกเข้ามาตรงกับ password ใน database หรือไม่ ผ่านฟังก์ชัน password_verify() ถ้าตรงกันเงื่อนไขจะเป็นจริง
         else {
             // ถ้า password ที่กรอกเข้ามาตรงกับ password ใน database
-            if (password_verify($password, $row['password'])) {
+
+            //เช็ค การเข้ารหัส Password
+            // if (password_verify($password, $row['password'])) {
+                if ($password == $row['password']){
                 // เก็บ username และ สถานะ login และไปยังหน้า index.php
                 $_SESSION['username'] = $username;
                 $_SESSION['is_logged_in'] = true;
