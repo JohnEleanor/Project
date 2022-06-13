@@ -14,3 +14,4 @@ catch (PDOException $e) {   //หากเชื่อมต่อผิดพ�
 }
 
 // Setting
+// adslkjasdlksd
