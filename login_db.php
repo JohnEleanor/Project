@@ -35,16 +35,15 @@ if (isset($_POST['submit'])) {
             // if (password_verify($password, $row['password'])) {
                 if ($password == $row['password']){
                 // เก็บ username และ สถานะ login และไปยังหน้า index.php
-                $_SESSION['username'] = $username;
-                $_SESSION['is_logged_in'] = true;
-                header('location: index.php');
+                    $_SESSION['username'] = $username;
+                    $_SESSION['is_logged_in'] = true;
+                    header('location: index.php');
             }
-
             // ถ้า password ที่กรอกเข้ามาไม่ตรงกับ password ใน database
-            else {
-                $_SESSION['err_pw'] = "รหัสผ่านไม่ถูกต้อง";
-                header('location: login.php');
-            }
+                else {
+                    $_SESSION['err_pw'] = "รหัสผ่านไม่ถูกต้อง";
+                    header('location: login.php');
+                }
         }
     }
 }
